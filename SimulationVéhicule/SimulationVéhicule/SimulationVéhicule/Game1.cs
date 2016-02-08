@@ -52,7 +52,7 @@ namespace SimulationVéhicule
             GestionInput = new InputManager(this);
             CaméraJeu = new CaméraSubjective(this, positionCaméra, cibleCaméra, Vector3.Up, INTERVALLE_MAJ_STANDARD);
 
-            Components.Add(new Carte(this, 1f, Vector3.Zero, Vector3.Zero, new Vector3(DIMENSION_TERRAIN, 25, DIMENSION_TERRAIN), "Carte", "DétailsTerrain", 5, INTERVALLE_MAJ_STANDARD));
+            Components.Add(new Carte(this, 1f, Vector3.Zero, Vector3.Zero, new Vector3(DIMENSION_TERRAIN, 25, DIMENSION_TERRAIN), "mt-taranaki-test", "DétailsTerrain", 5, INTERVALLE_MAJ_STANDARD));
             Components.Add(GestionInput);
             Components.Add(CaméraJeu);
             Components.Add(new Afficheur3D(this));

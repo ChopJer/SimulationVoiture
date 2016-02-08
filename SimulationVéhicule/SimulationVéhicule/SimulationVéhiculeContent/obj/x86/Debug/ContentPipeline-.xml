@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Corroga.xnb</Output>
-      <Time>2016-02-03T10:22:33.9548346-05:00</Time>
+      <Time>2016-02-08T12:47:08.7236711-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_01.jpg</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_01.xnb</Output>
-      <Time>2016-02-03T10:22:33.9578349-05:00</Time>
+      <Time>2016-02-08T12:47:08.7306823-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_02.jpg</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_02.xnb</Output>
-      <Time>2016-02-03T10:22:33.9608352-05:00</Time>
+      <Time>2016-02-08T12:47:08.7356903-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_03.jpg</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_03.xnb</Output>
-      <Time>2016-02-03T10:22:33.9638355-05:00</Time>
+      <Time>2016-02-08T12:47:08.7416999-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_Wa.jpg</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_Wa.xnb</Output>
-      <Time>2016-02-03T10:22:33.9668358-05:00</Time>
+      <Time>2016-02-08T12:47:08.7467079-05:00</Time>
     </Item>
     <Item>
       <Source>Models\MustangGT500.FBX</Source>
@@ -53,10 +53,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\MustangGT500.xnb</Output>
-      <Time>2016-02-03T10:22:33.9528344-05:00</Time>
+      <Time>2016-02-08T12:47:08.7156583-05:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\MustangGT500_0.xml</Key>
-        <Value>2016-02-03T10:59:33.4747738-05:00</Value>
+        <Value>2016-02-08T13:09:53.0144704-05:00</Value>
       </Dependency>
       <Request>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Corroga_0.xnb</Request>
       <Request>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_03_0.xnb</Request>
@@ -69,7 +69,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\MustangGT500_0.xml</Output>
-      <Time>2016-02-03T10:22:33.9528344-05:00</Time>
+      <Time>2016-02-08T12:47:08.7156583-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Corroga.jpg</Source>
@@ -85,7 +85,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Corroga_0.xnb</Output>
-      <Time>2016-02-03T10:22:33.9548346-05:00</Time>
+      <Time>2016-02-08T12:47:08.7236711-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_03.jpg</Source>
@@ -101,7 +101,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_03_0.xnb</Output>
-      <Time>2016-02-03T10:22:33.9638355-05:00</Time>
+      <Time>2016-02-08T12:47:08.7416999-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_02.jpg</Source>
@@ -117,7 +117,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_02_0.xnb</Output>
-      <Time>2016-02-03T10:22:33.9608352-05:00</Time>
+      <Time>2016-02-08T12:47:08.7356903-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_Wa.jpg</Source>
@@ -133,7 +133,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_Wa_0.xnb</Output>
-      <Time>2016-02-03T10:22:33.9668358-05:00</Time>
+      <Time>2016-02-08T12:47:08.7467079-05:00</Time>
     </Item>
     <Item>
       <Source>Models\_Pool_01.jpg</Source>
@@ -149,7 +149,25 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_01_0.xnb</Output>
-      <Time>2016-02-03T10:22:33.9578349-05:00</Time>
+      <Time>2016-02-08T12:47:08.7306823-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\mt-taranaki-test.png</Source>
+      <Name>Textures\mt-taranaki-test</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Textures\mt-taranaki-test.xnb</Output>
+      <Time>2016-02-08T13:58:07.1338534-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\DétailsTerrain.jpg</Source>
+      <Name>Textures\DétailsTerrain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Textures\DétailsTerrain.xnb</Output>
+      <Time>2016-02-08T14:10:17.0719998-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -190,7 +208,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2016-01-11T11:44:00.6031327-05:00</Value>
+        <Value>2016-01-11T11:59:25.7959207-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

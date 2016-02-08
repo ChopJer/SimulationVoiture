@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 
 namespace SimulationVéhicule
 {
-    public class Carte
+    public class Carte : PrimitiveDeBaseAnimée
     {
         const int NB_TRIANGLES_PAR_TUILE = 2;
         const int NB_SOMMETS_PAR_TRIANGLE = 3;
@@ -39,7 +39,7 @@ namespace SimulationVéhicule
 
         public Carte(Game jeu, float homothétieInitiale, Vector3 rotationInitiale, Vector3 positionInitiale,
                        Vector3 étendue, string nomCarteTerrain, string nomTextureTerrain, int nbNiveauxTexture, float intervalleMAJ)
-            //: base(jeu, homothétieInitiale, rotationInitiale, positionInitiale, intervalleMAJ)
+            : base(jeu, homothétieInitiale, rotationInitiale, positionInitiale, intervalleMAJ)
         {
             Étendue = étendue;
             NomCarteTerrain = nomCarteTerrain;

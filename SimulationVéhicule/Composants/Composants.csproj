@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Composants</RootNamespace>
+    <RootNamespace>SimulationVéhicule</RootNamespace>
     <AssemblyName>Composants</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -65,6 +65,7 @@
     <Compile Include="CaméraSubjective.cs" />
     <Compile Include="InputManager.cs" />
     <Compile Include="PrimitiveDeBase.cs" />
+    <Compile Include="PrimitiveDeBaseAnimée.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RessourceDeBase.cs" />
     <Compile Include="RessourcesManager.cs" />
