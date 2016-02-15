@@ -12,10 +12,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace SimulationVéhicule
 {
-    /// <summary>
-    /// This is a game component that implements IUpdateable.
-    /// </summary>
-    public abstract class PrimitiveDeBaseAnimée : PrimitiveDeBase
+    public class PrimitiveDeBaseAnimée : PrimitiveDeBase
     {
         protected float AngleLacet { get; set; }
         protected float AngleRoulis { get; set; }
@@ -36,11 +33,18 @@ namespace SimulationVéhicule
         public override void Initialize()
         {
             base.Initialize();
+            if(MondeÀRecalculer)
+            {
+                CalculerMatriceMonde();
+            }
         }
 
         protected override void CalculerMatriceMonde()
         {
-
+            Monde = Matrix.Identity *
+                    Matrix.CreateScale(HomothétieInitiale) *
+                    Matrix.CreateFromYawPitchRoll(RotationInitiale.Y, RotationInitiale.X, RotationInitiale.Z) *
+                    Matrix.CreateTranslation(PositionInitiale);
         }
         /// <summary>
         /// Allows the game component to update itself.
@@ -51,6 +55,11 @@ namespace SimulationVéhicule
             // TODO: Add your update code here
 
             base.Update(gameTime);
+        }
+
+        public override void Draw(GameTime gameTime)
+        {
+            base.Draw(gameTime);
         }
     }
 }

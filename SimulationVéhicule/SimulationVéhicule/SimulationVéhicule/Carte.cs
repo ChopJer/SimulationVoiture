@@ -5,13 +5,17 @@ using Microsoft.Xna.Framework;
 
 namespace SimulationVéhicule
 {
-    public class Carte : PrimitiveDeBaseAnimée
+    public class Carte : PrimitiveDeBase
     {
         const int NB_TRIANGLES_PAR_TUILE = 2;
         const int NB_SOMMETS_PAR_TRIANGLE = 3;
         const int NB_SOMMETS_PAR_TUILE = 4;
+        const float AngleLacet  = MathHelper.Pi / 180;
+        const float AngleRoulis = MathHelper.Pi / 180;
+        const float AngleTangage =  MathHelper.Pi / 180;
         const float MAX_COULEUR = 255f;
 
+        protected InputManager GestionInput { get; set; }      
         private Texture2D CarteTerrain { get; set; }
         private Color[] DataTexture { get; set; }
         private Vector2 DeltaCarte { get; set; }
@@ -19,7 +23,8 @@ namespace SimulationVéhicule
         private float ÉcartTexture { get; set; }
         private Vector3 Étendue { get; set; }
 
-        private Matrix monde { get; set; }
+        private Matrix monde1 { get; set; }
+        private Matrix monde2 { get; set; }
         private BasicEffect EffetDeBase { get; set; }
 
         private RessourcesManager<Texture2D> GestionnaireDeTextures { get; set; }
@@ -39,7 +44,7 @@ namespace SimulationVéhicule
 
         public Carte(Game jeu, float homothétieInitiale, Vector3 rotationInitiale, Vector3 positionInitiale,
                        Vector3 étendue, string nomCarteTerrain, string nomTextureTerrain, int nbNiveauxTexture, float intervalleMAJ)
-            : base(jeu, homothétieInitiale, rotationInitiale, positionInitiale, intervalleMAJ)
+            : base(jeu, homothétieInitiale, rotationInitiale, positionInitiale)
         {
             Étendue = étendue;
             NomCarteTerrain = nomCarteTerrain;
@@ -47,7 +52,7 @@ namespace SimulationVéhicule
             NbNiveauTexture = nbNiveauxTexture;
         }
 
-        public void Initialize()
+        public override void Initialize()
         {
             GestionnaireDeTextures = Game.Services.GetService(typeof(RessourcesManager<Texture2D>)) as RessourcesManager<Texture2D>;
             InitialiserDonnéesCarte();
@@ -74,6 +79,17 @@ namespace SimulationVéhicule
             NbSommets = NbColonnes * NbRangées * 6; //*2 pour le nb de triangles et *3 pour le nombre de sommets
         }
 
+        /// <summary>
+        /// réinitialisation matrice monde
+        /// </summary>
+        protected override void CalculerMatriceMonde()
+        {
+            monde2 = Matrix.Identity *
+                    Matrix.CreateScale(HomothétieInitiale) *
+                    Matrix.CreateFromYawPitchRoll(RotationInitiale.Y, RotationInitiale.X, RotationInitiale.Z) *
+                    Matrix.CreateTranslation(PositionInitiale);
+        }
+
         //
         // à partir de la texture contenant les textures carte de hauteur (HeightMap), on initialise les données
         // relatives à l'application des textures de la carte
@@ -96,12 +112,21 @@ namespace SimulationVéhicule
             TabSommets = new VertexPositionTexture[NbSommets];
         }
 
-        protected void LoadContent()
+        protected override void LoadContent()
         {
             base.LoadContent();
             EffetDeBase = new BasicEffect(GraphicsDevice);
             InitialiserParamètresEffetDeBase();
-            monde = GetMonde();
+            monde1 = GetMonde();
+            if(monde1 == null)
+            {
+                CalculerMatriceMonde();
+            }
+            else
+            {
+                monde2 = monde1;
+            }
+
         }
 
         void InitialiserParamètresEffetDeBase()
@@ -136,7 +161,7 @@ namespace SimulationVéhicule
         // Création des sommets.
         // N'oubliez pas qu'il s'agit d'un TriangleList...
         //
-        protected  void InitialiserSommets()
+        protected  override void InitialiserSommets()
         {
             float margeDétailsTexture = (Étendue.Y / (float)NbNiveauTexture) + 1;
             int cpt = 0;
@@ -176,13 +201,9 @@ namespace SimulationVéhicule
                 }
             }
         }
-
-        //
-        // Deviner ce que fait cette méthode...
-        //
         public override void Draw(GameTime gameTime)
         {
-            EffetDeBase.World = monde;
+            EffetDeBase.World = monde2;
             EffetDeBase.View = CaméraJeu.Vue;
             EffetDeBase.Projection = CaméraJeu.Projection;
             foreach (EffectPass pass in EffetDeBase.CurrentTechnique.Passes)

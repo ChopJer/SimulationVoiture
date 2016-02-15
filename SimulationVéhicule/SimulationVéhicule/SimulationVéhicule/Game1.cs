@@ -13,7 +13,7 @@ namespace SimulationVéhicule
 {
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        const int DIMENSION_TERRAIN = 256;
+        const int DIMENSION_TERRAIN = 10;
         const float INTERVALLE_CALCUL_FPS = 1f;
         const float INTERVALLE_MAJ_STANDARD = 1f / 60f;
 

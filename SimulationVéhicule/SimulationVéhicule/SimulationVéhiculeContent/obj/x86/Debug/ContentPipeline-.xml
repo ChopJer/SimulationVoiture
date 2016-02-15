@@ -47,6 +47,24 @@
       <Time>2016-02-08T12:47:08.7467079-05:00</Time>
     </Item>
     <Item>
+      <Source>Textures\mt-taranaki-test.png</Source>
+      <Name>Textures\mt-taranaki-test</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Textures\mt-taranaki-test.xnb</Output>
+      <Time>2016-02-08T13:58:07.1338534-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\DétailsTerrain.jpg</Source>
+      <Name>Textures\DétailsTerrain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Textures\DétailsTerrain.xnb</Output>
+      <Time>2016-02-08T14:10:17.0719998-05:00</Time>
+    </Item>
+    <Item>
       <Source>Models\MustangGT500.FBX</Source>
       <Name>Models\MustangGT500</Name>
       <Importer>FbxImporter</Importer>
@@ -56,7 +74,7 @@
       <Time>2016-02-08T12:47:08.7156583-05:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\MustangGT500_0.xml</Key>
-        <Value>2016-02-08T13:09:53.0144704-05:00</Value>
+        <Value>2016-02-15T14:37:37.2598903-05:00</Value>
       </Dependency>
       <Request>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Corroga_0.xnb</Request>
       <Request>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_03_0.xnb</Request>
@@ -151,29 +169,11 @@
       <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Models\_Pool_01_0.xnb</Output>
       <Time>2016-02-08T12:47:08.7306823-05:00</Time>
     </Item>
-    <Item>
-      <Source>Textures\mt-taranaki-test.png</Source>
-      <Name>Textures\mt-taranaki-test</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Textures\mt-taranaki-test.xnb</Output>
-      <Time>2016-02-08T13:58:07.1338534-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\DétailsTerrain.jpg</Source>
-      <Name>Textures\DétailsTerrain</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhicule\bin\x86\Debug\Content\Textures\DétailsTerrain.xnb</Output>
-      <Time>2016-02-08T14:10:17.0719998-05:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />
       <TargetPlatform>Windows</TargetPlatform>
-      <TargetProfile>Reach</TargetProfile>
+      <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
       <RootDirectory>C:\Users\201448706\Documents\GitHub\SimulationVoiture\SimulationVéhicule\SimulationVéhicule\SimulationVéhiculeContent\</RootDirectory>
